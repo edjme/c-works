@@ -1,0 +1,10 @@
+.main__flex-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+.main__flex-options-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}/*# sourceMappingURL=main__flex-options.css.map */

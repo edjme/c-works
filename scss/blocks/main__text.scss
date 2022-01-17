@@ -1,0 +1,47 @@
+.main__text {
+    margin: 0;
+    padding: 0;
+    padding: 60px 160px 60px;
+
+    &-subscription {
+        margin: 0;
+        padding: 0;
+        @include font(normal, 32px, 40px, #8E8E98);
+        margin-bottom: 60px;
+    }
+
+    &-sub {
+        margin: 0;
+        padding: 0;
+        @include font(normal, 32px, 40px, #fff);
+    }
+}
+    
+@media screen and (max-width: $media_display_max) {
+    .main__text {
+        padding: 60px 60px 60px;
+
+        &-subscription {
+            @include font(normal, 20px, 30px, #8E8E98);
+        }
+        
+        &-sub {
+            @include font(normal, 20px, 30px, #fff);
+        }
+    }
+}
+
+@media screen and (max-width: $media_display_min) {
+    .main__text {
+        padding: 40px 20px 30px;
+
+        &-subscription {
+            @include font(normal, 12px, 18px, #8E8E98);
+            margin-bottom: 20px;
+        }
+        
+        &-sub {
+            @include font(normal, 12px, 18px, #fff);
+        }
+    }
+}

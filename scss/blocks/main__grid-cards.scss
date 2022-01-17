@@ -1,0 +1,120 @@
+.main__grid {
+    margin: 0;
+    padding: 0;
+
+    &-cards {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 60px 160px 60px;
+    }
+
+    &-title {
+        margin: 0;
+        padding: 0;
+        @include font(normal, 32px, 40px, #fff);
+        margin-bottom: 60px;
+    }
+
+    &-content {
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(4, 265px);
+        grid-template-rows: 153px;
+        gap: 20px;
+    }
+}
+
+.card {
+    margin: 0;
+    padding: 0;
+    padding: 20px;
+    background: #1C1C1E;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &__title {
+        margin: 0;
+        padding: 0;
+        @include font(normal, 18px, 18px, #EAEAF0);
+        margin-bottom: 38px;
+    }
+
+    &__text {
+        margin: 0;
+        padding: 0;
+        @include font(normal, 15px, 19px, #8E8E98);
+    }
+}
+
+.card:hover {
+    transition: .8s;
+    background: #232327;   
+}
+
+@media screen and (max-width: 1300px) {
+    .main__grid {
+        &-content {
+            grid-template-columns: repeat(auto-fit, minmax(150px, 265px));
+            grid-auto-rows: 153px;
+        }
+    }
+}
+
+@media screen and (max-width: $media_display_max) {
+    .main__grid {
+        &-cards {
+            padding: 60px;
+        }
+
+        &-title {
+            @include font(normal, 20px, 30px, #fff);
+        }
+
+        &-content {
+            grid-template-columns: repeat(2, 314px);
+            grid-template-rows: repeat(2, 153px);
+            gap: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .main__grid {
+        &-content {
+            grid-template-columns: repeat(auto-fit, minmax(150px, 265px));
+            grid-auto-rows: 153px;
+        }
+    }
+}
+
+@media screen and (max-width: $media_display_min) {
+    .main__grid {
+        &-cards {
+            padding: 40px 20px 30px;
+        }
+
+        &-title {
+            @include font(normal, 12px, 18px, #fff);
+            margin-bottom: 40px;
+        }
+
+        &-content {
+            grid-template-columns: 280px;
+            grid-template-rows: repeat(4, 148px);
+            gap: 20px;
+        }
+    }
+
+    .card {
+        &__title {
+            margin-bottom: 36px;
+        }
+    
+        &__text {
+            @include font(normal, 12px, 18px, #8E8E98);
+        }
+    }
+}

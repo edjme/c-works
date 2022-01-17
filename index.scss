@@ -1,0 +1,13 @@
+@import url("./vendor/normalize.css");
+@import url("./vendor/fonts/fonts.css");
+@import "./scss/variables.scss";
+@import "./scss/mixins.scss";
+
+@import "./scss/blocks/page.scss";
+@import "./scss/blocks/header.scss";
+@import "./scss/blocks/main__grid-photo.scss";
+@import "./scss/blocks/main__text.scss";
+@import "./scss/blocks/main__flex-options.scss";
+@import "./scss/blocks/main__grid-cards.scss";
+@import "./scss/blocks/main__feedback.scss";
+@import "./scss/blocks/footer.scss";

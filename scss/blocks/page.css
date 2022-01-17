@@ -1,0 +1,12 @@
+.page {
+  background-color: #000;
+  max-width: 1440px;
+  min-width: 320px;
+  padding: 60px 0 60px;
+}
+
+@media screen and (max-width: 480px) {
+  .page {
+    padding: 24px 0 20px;
+  }
+}/*# sourceMappingURL=page.css.map */
