@@ -5,7 +5,7 @@
 Работа служит для улучшения навыков вёрстки.
 
 
-[https://edjme.github.io/mesto-project/index.html]
+[https://github.com/edjme/c-works.git]
 
 
 
