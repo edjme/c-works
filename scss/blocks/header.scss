@@ -77,30 +77,30 @@
     }
 }
 
-.brand-name {
-    margin: 0;
-    padding: 0;
-    @include font(normal, 22px, 30px, #fff);
-    display: flex;
-    justify-self: center;
-    align-self: center;
-}
+// .brand-name {
+//     margin: 0;
+//     padding: 0;
+//     @include font(normal, 22px, 30px, #fff);
+//     display: flex;
+//     justify-self: center;
+//     align-self: center;
+// }
 
-.greading {
-    margin: 0;
-    padding: 0;
-    @include font(normal, 12px, 12px, #000);
-    background: #25E197;
-    border-radius: 4px;
-    display: flex;
-    justify-self: center;
-    align-self: center;
-    margin-left: 20px;
-    height: 20px;
-    width: 99px;
-    justify-content: center;
-    align-items: center;
-}
+// .greading {
+//     margin: 0;
+//     padding: 0;
+//     @include font(normal, 12px, 12px, #000);
+//     background: #25E197;
+//     border-radius: 4px;
+//     display: flex;
+//     justify-self: center;
+//     align-self: center;
+//     margin-left: 20px;
+//     height: 20px;
+//     width: 99px;
+//     justify-content: center;
+//     align-items: center;
+// }
 
 @media screen and (max-width: 1230px) {
     .header {
@@ -126,12 +126,12 @@
             @include font(normal, 50px, 60px, #fff);
             margin-bottom: 470px;
         }
+
+        &__form {
+            max-width: 648px;
+        }
     }
 
-    .header__form {
-        max-width: 648px;
-    }
-    
     .form {
         &__line {
             max-width: 414px;

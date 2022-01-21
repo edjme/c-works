@@ -1,0 +1,7 @@
+@media screen and (max-width: $media_display_max) {
+    .form {
+        &__line {
+            max-width: 414px;
+        }
+    }
+}

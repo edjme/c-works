@@ -1,0 +1,8 @@
+.brand-name {
+    margin: 0;
+    padding: 0;
+    @include font(normal, 22px, 30px, #fff);
+    display: flex;
+    justify-self: center;
+    align-self: center;
+}

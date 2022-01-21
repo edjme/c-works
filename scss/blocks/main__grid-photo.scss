@@ -4,8 +4,7 @@
     gap: 20px;
     grid-template-rows: 230px 552px;
     grid-template-areas: "group__first"
-    "group__second"
-
+    "group__second";
 }
 
 .group__yellow {
@@ -31,17 +30,17 @@
     background-size: cover;
 }
 
+.yellow {
+    background: #FFD233;
+    border-radius: 10px;
+    grid-area: yellow;
+}
+
 .photo {
     grid-area: photo;
     border-radius: 10px;
     background-image: url(../../images/Vector1.svg);
     background-size: cover;
-}
-
-.yellow {
-    background: #FFD233;
-    border-radius: 10px;
-    grid-area: yellow;
 }
 
 .green {
