@@ -1,4 +1,4 @@
-.main__feedback {
+.feedback {
     margin: 0;
     padding: 0;
     padding: 60px 160px 60px 160px;
@@ -6,7 +6,7 @@
     &-title {
         margin: 0;
         padding: 0;
-        @include font(normal, 32px, 40px, #fff);
+        @include font($wght, 32px, 40px, $clr_wht);
         margin-bottom: 90px;
     }
 
@@ -15,7 +15,7 @@
         padding: 0;
         width: 306px;
         height: 50px;
-        @include font(normal, 14px, 24px, #fff);
+        @include font($wght, 14px, 24px, $clr_wht);
         margin-bottom: 50px;
         text-align: center;
         display: flex;
@@ -24,21 +24,23 @@
         letter-spacing: 0.375px;
         background: #47474C;
         border-radius: 8px;
+        cursor: pointer;
+        text-decoration: none;
     }
 
     &-text {
         margin: 0;
         padding: 0;
-        @include font(normal, 32px, 40px, #8E8E98);
+        @include font($wght, 32px, 40px, $clr_gry);
     }
 }
 
 @media screen and (max-width: $media_display_max) {
-    .main__feedback {
+    .feedback {
         padding: 60px;
 
         &-title {
-            @include font(normal, 20px, 30px, #fff);
+            @include font($wght, 20px, 30px, $clr_wht);
             margin-bottom: 80px;
         }
 
@@ -47,28 +49,28 @@
         }
 
         &-text {
-            @include font(normal, 20px, 30px, #8E8E98);
+            @include font($wght, 20px, 30px, $clr_gry);
         }
     }
 }
 
 @media screen and (max-width: $media_display_min) {
-    .main__feedback {
+    .feedback {
         padding: 40px 20px 30px;
 
         &-title {
-            @include font(normal, 12px, 18px, #fff);
+            @include font($wght, 12px, 18px, $clr_wht);
             margin-bottom: 50px;
         }
 
         &-subtitle {
             width: 280px;
-            @include font(normal, 12px, 18px, #fff);
+            @include font($wght, 12px, 18px, $clr_wht);
             margin-bottom: 30px;
         }
 
         &-text {
-            @include font(normal, 12px, 18px, #8E8E98);
+            @include font($wght, 12px, 18px, $clr_gry);
         }
     }
 }
