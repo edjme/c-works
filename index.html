@@ -5,66 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C-Works</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./pages/index.css">
 </head>
 
 <body class="page">
     <header class="header">
         <div class="header__sub">
-            <h2 class="brand-name">C-Wroks</h2>
+            <h2 class="brand-name">C-Works</h2>
             <h2 class="greading">мы открылись</h2>
         </div>
 
         <h1 class="header__title">Ремонт</h1>
         <h2 class="header__subtitle">Плёночных фотоаппаратов</h2>
+
         <form class="header__form" name="form-text">
             <fieldset class="form">
-                <input type="text" class="form__line" id="new_name" name="new_name" placeholder="" value="" required>
-                <button type="button" class="form__button"><span class="media">Отремонтируйте камеру</span> 	&#9996;</button>
+                <input type="email" class="form__line" id="new_name" name="new_name" placeholder="" value="" required>
+                <button type="submit" class="form__button"><span class="speshial">   <span class="media">Отремонтируйте камеру</span> 	&#9996;</span>  <span class="invsbl">Круто, спасибо за доверие!</span></button>
             </fieldset>
-            <p class="form__subtext">Напишите нам и мы свяжемся с вами.</p>
         </form>
+        <p class="header__subtext">Напишите нам и мы свяжемся с вами.</p>
     </header>
     
     <main class="main">
-        <section class="main__grid-photo">
-            <div class="group__yellow">
+        <section class="grid-photo">
+            <div class="grid-photo__section">
                 <div class="zoom"></div>
                 <div class="yellow"></div>
             </div>
             
-            <div class="group__green">
+            <div class="grid-photo__section">
                 <div class="green"></div>
                 <div class="photo"></div>
             </div> 
         </section>
 
-        <section class="main__text">
-            <p class="main__text-subscription">Мы ремонтируем плёночные фотоаппараты. Полносстью механические камеры, относительно современные камеры на электронике, проводим CLA камер, принимаем в зачёт оплаты сломаные тушки и объективы.</p>
-            <p class="main__text-sub">Для энтузиастов, от энтузиастов &#128072;</p>
+        <section class="text">
+            <p class="text-subscription">Мы ремонтируем плёночные фотоаппараты. Полносстью механические камеры, относительно современные камеры на электронике, проводим CLA камер, принимаем в зачёт оплаты сломаные тушки и объективы.</p>
+            <p class="text-sub">Для энтузиастов, от энтузиастов &#128072;</p>
         </section>
 
-        <section class="main__flex-options">
-            <div class="main__flex-options-item">
-                <h3 class="main__flex-options_subtitle">CLA</h3>
-                <h2 class="main__flex-options_title">Чистка камер.</h2>
-                <p class="main__flex-options_text">Замена уплотнителей, дампфера зеркала, смазка механизмов, юстировка.</p>
-                <h2 class="main__flex-options_cost">от 2000&#8381;</h2>
+        <section class="flex-options">
+            <div class="flex-options-item">
+                <h3 class="flex-options-item__subtitle">CLA</h3>
+                <h2 class="flex-options-item__title">Чистка камер.</h2>
+                <p class="flex-options-item__text">Замена уплотнителей, дампфера зеркала, смазка механизмов, юстировка.</p>
+                <h2 class="flex-options-item__cost">от 2000&#8381;</h2>
             </div>
 
-            <div class="main__flex-options-item">
-                <h3 class="main__flex-options_subtitle">Ремонт</h3>
-                <h2 class="main__flex-options_title">Ремонт камер.</h2>
-                <p class="main__flex-options_text">Ремонт механизмов, замена деталей, пайка электроники, адаптация питания.</p>
-                <h2 class="main__flex-options_cost">от 2500&#8381;</h2>
+            <div class="flex-options-item">
+                <h3 class="flex-options-item__subtitle">Ремонт</h3>
+                <h2 class="flex-options-item__title">Ремонт камер.</h2>
+                <p class="flex-options-item__text">Ремонт механизмов, замена деталей, пайка электроники, адаптация питания.</p>
+                <h2 class="flex-options-item__cost">от 2500&#8381;</h2>
             </div>
         </section>
 
-        <section class="main__grid-cards">
-
-            <h2 class="main__grid-title">Полная гарантия &#9889;</h2>
-
-            <div class="main__grid-content">
+        <section class="grid-cards">
+            <h2 class="grid-cards__title">Полная гарантия &#9889;</h2>
+            <div class="grid-cards__content">
 
                 <div class="card">
                     <h2 class="card__title">CLA</h2>
@@ -90,10 +89,10 @@
             </div>
         </section>
 
-        <section class="main__feedback">
-            <h2 class="main__feedback-title">Поддержите нас &#129309;</h2>
-            <h3 class="main__feedback-subtitle">Напишите нам если хотите помочь!</h3>
-            <p class="main__feedback-text">Ещё вы сможете безвозмездно поддержать нас на Patreon, пока мы ещё создали аккаунт, но как только это сделаем, сообщим вам.</p>
+        <section class="feedback">
+            <h2 class="feedback-title">Поддержите нас &#129309;</h2>
+            <a class="feedback-subtitle" href="#">Напишите нам если хотите помочь!</a>
+            <p class="feedback-text">Ещё вы сможете безвозмездно поддержать нас на Patreon, пока мы ещё создали аккаунт, но как только это сделаем, сообщим вам.</p>
         </section>
     </main>
 
@@ -105,16 +104,17 @@
 
         <form class="footer__form" name="footer__form-text">
             <fieldset class="form">
-                <input type="text" class="form__line input__name" id="footer_name" name="footer_name" placeholder="" value="" required>
-                <button type="button" class="form__button"><span class="media">Отремонтируйте камеру</span> 	&#9996;</button>
+                <input type="email" class="form__line" id="footer_name" name="footer_name" placeholder="" value="" required>
+                <button type="submit" class="form__button"><span class="speshial">   <span class="media">Отремонтируйте камеру</span> 	&#9996;</span>  <span class="invsbl">Круто, спасибо за доверие!</span></button>
             </fieldset>
-
-            <div class="footer__subtitle">
-                <p class="footer__subtext">Напишите нам и мы свяжемся с вами.</p>
-                <p class="footer__tag">© C-Works, 2021.</p>
-            </div>
         </form>
+        <div class="footer__subtitle">
+            <p class="footer__subtext">Напишите нам и мы свяжемся с вами.</p>
+            <p class="footer__tag">© C-Works, 2021.</p>
+        </div>
     </footer>
+
+    <script src="./scripts/scripts.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,105 @@
+.grid-photo {
+    padding: 60px 30px 60px;
+    display: grid;
+    gap: 20px;
+    grid-template-rows: 230px 552px;
+    grid-template-areas: "group__first"
+    "group__second";
+
+    &__section {
+        display: grid;
+        column-gap: 20px;
+        grid-area: group__first;
+        grid-template-areas: "zoom yellow";
+        grid-template-columns: minmax(280px, 448px) minmax(180px, 912px);
+    }
+    
+    &__section:last-child {
+        grid-area: group__second;
+        grid-template-areas: "green photo";
+        grid-template-columns: minmax(173px, 630px) minmax(445px, 730px);
+    }
+}
+
+.zoom {
+    grid-area: zoom;
+    border-radius: 10px;
+    background-image: url(../../images/zoom.png);
+    background-size: cover;
+}
+
+.yellow {
+    background: #FFD233;
+    border-radius: 10px;
+    grid-area: yellow;
+}
+
+.photo {
+    grid-area: photo;
+    border-radius: 10px;
+    background-image: url(../../images/photo.png);
+    background-size: cover;
+}
+
+.green {
+    background: $clr_grn;
+    border-radius: 10px;
+    grid-area: green;
+}
+
+@media screen and (max-width: $media_display_max) {
+    .grid-photo {
+        grid-template-rows: 230px 334px;
+        padding: 20px 60px 60px;
+
+        &__section {
+            grid-template-columns: minmax(380px, 448px) minmax(100px, 180px);
+        }
+    
+        &__section:last-child {
+            grid-template-columns: minmax(100px, 173px) minmax(400px, 455px);
+        }
+    }
+}
+
+
+@media screen and (max-width: 680px) {
+    .grid-photo {
+        padding: 20px;
+        grid-template-rows: 229px 355px;
+
+        &__section {
+            column-gap: 0;
+            row-gap: 20px;
+            grid-template-areas: "zoom" 
+            "yellow";
+            grid-template-columns: minmax(280px, 520px);
+            grid-template-rows: 142px 67px;
+        }
+        
+        &__section:last-child {
+            column-gap: 0;
+            row-gap: 20px;
+            grid-template-areas: "green"
+            "photo";
+            grid-template-columns: minmax(280px, 520px);
+            grid-template-rows: 124px 211px;
+        }
+    }
+
+    .zoom {
+        border-radius: 4px;
+    }
+    
+    .photo {
+        border-radius: 4px;
+    }
+    
+    .yellow {
+        border-radius: 4px;
+    }
+    
+    .green {
+        border-radius: 4px;
+    }
+}

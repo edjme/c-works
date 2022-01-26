@@ -26,13 +26,13 @@
     &__tag {
         margin: 0;
         padding: 0;
-        @include font(normal, 12px, 18px, #47474C);
+        @include font($wght, 12px, 18px, $clr_sbttl);
     }
 
     &__subtext {
         margin: 0;
         padding: 0;
-        @include font(normal, 12px, 18px, #47474C);
+        @include font($wght, 12px, 18px, $clr_sbttl);
     }
 
     &__form {
@@ -42,7 +42,7 @@
 
 @media screen and (max-width: $media_display_max) {
     .footer {
-        margin: 150px 60px 0 60px;
+        margin: 150px 60px 0;
 
         &__subtitle {
             flex-direction: column;

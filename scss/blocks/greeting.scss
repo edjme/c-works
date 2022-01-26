@@ -1,8 +1,8 @@
 .greading {
     margin: 0;
     padding: 0;
-    @include font(normal, 12px, 12px, #000);
-    background: #25E197;
+    @include font($wght, 12px, 12px, #000);
+    background: $clr_grn;
     border-radius: 4px;
     display: flex;
     justify-self: center;

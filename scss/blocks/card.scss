@@ -1,0 +1,38 @@
+.card {
+    margin: 0;
+    padding: 0;
+    padding: 20px;
+    background: #1C1C1E;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &__title {
+        margin: 0;
+        padding: 0;
+        @include font($wght, 18px, 18px, #EAEAF0);
+        margin-bottom: 38px;
+    }
+
+    &__text {
+        margin: 0;
+        padding: 0;
+        @include font($wght, 15px, 19px, $clr_gry);
+    }
+}
+
+.card:hover {
+    transition: .8s;
+    background: #232327;   
+}
+
+@media screen and (max-width: $media_display_min) {
+    .card {
+        &__title {
+            margin-bottom: 36px;
+        }
+    
+        &__text {
+            @include font($wght, 12px, 18px, $clr_gry);
+        }
+    }
+}
